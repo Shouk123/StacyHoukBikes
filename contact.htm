@@ -1,0 +1,90 @@
+<!--
+*****************************************************************************
+Title: Contact Page-Houk's Bicycles
+Use: Contact Page
+Author: Stacy Houk
+School/Term: Southern Illinois University, Spring 2021
+Developed: Feb 6, 2021
+Revised: March 27, 2021
+Tested: March 27, 2021; Passed on Firefox, Opera, and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+     <!--Navigation Menu-->
+<nav id="nav_menu"> 
+    <ul>
+        <li><a href="index.htm" >Home</a></li>
+        <li><a href="rental.htm" >Get Rentals</a></li>
+        <li><a href="sales.htm" >Sales</a></li>
+        <li><a href="services.htm" >Services</a></li>
+        <li><a href="contact.htm" class="current" class="lastitem">Contact Us</a></li>
+    
+    </ul>
+</nav>
+ <head><!--Head section begin-->
+    <meta charset="utf-8"> 
+    <meta name="description" content="Welcome to Houk's Bicycles-Contact Page">
+    <meta name="keywords" content="Contact Page">
+    
+    <link rel="stylesheet" href="CSS/bike.css">
+    <link rel="stylesheet" href="SlickNav-master/scss/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min,js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo: ="#mobile_menu"});
+        });
+    </script>
+</head><!--Head section end-->
+<body>
+    <header>
+        <h1>Contact Page</h1>
+    </header>
+<!--Start Form below-->    
+<form id="email_form" action="response.htm" method="post">
+    <p>Please fill out the contact form below.</p>
+    <p> Full Name: <input type="text" id="FullName" 
+                        minlength="15"  maxlength="25" required autofocus> </p>
+    <p> Address: <input type="text" id="Address" minlength="15"  maxlength="50"required> </p>
+    <p> City: <input type="text" id="City" minlength="4"  maxlength="25"required> </p>
+    <p> State: <br>
+        <select id ="state" required>
+        <option value="Illinois">IL </option>
+        <option value="Indiana">IN </option>
+        <option value="Missouri">MO </option>
+        <option value="Iowa">IA </option>
+        <option value="Kentucky">KY </option>
+        </select> </p>
+    <p> Zip Code: <input type="text" id="Zip" minlength="5"  maxlength="10" required
+                         pattern="\d{5}([\-]\d{4})?"
+        title="Must be 99999 or 99999-9999"> </p>
+    <p> Phone Number: <input type="tel" id="Phone" minlength="10"  maxlength="12" required 
+                             pattern="\d{3}[\-]\d{3}[\-]\d{4}"
+                             title="Must be 999-999-9999"> </p>
+    <p> Email: <input type="email" "id=email" minlength="10"  maxlength="25" required> </p>
+    <p> Submission Date: <input type="date" id="date" required> </p>
+    <fieldset> 
+        <legend> Inquiry Type</legend>
+        <input type="checkbox" name="Sales" id="SalesInquiry" value="Sales">
+        <label for="SalesInquiry">Sales</label><br>
+        <input type="checkbox" name="Service" id="ServiceInquiry" value="Service">
+        <label for="ServiceInquiry">Service</label><br>
+        <input type="checkbox" name="Rental" id="RentalInquiry" value="Rental">
+        <label for="RentalInquiry">Rental</label><br>
+    </fieldset>
+    <fieldset>
+    <legend> Bicylce Type</legend>
+        <input type="radio" name="BikeType" id="MountainBike" value="MountainBike">
+        <label for="MountainBike">Mountain Bike</label><br>
+        <input type="radio" name="BikeType" id="StreetBike" value="StreetBike">
+        <label for="StreetBike">Street Bike</label><br>
+    </fieldset>
+    <p> Create Password: <input type="password" id="Password" maxlength="6"
+                                placeholder="Enter your password" required> </p>
+    <p> Message: <input type="text" id="Message" minlength="20"  maxlength="200" required> </p>
+    <p><input type="submit" id="submit" value="Submit">
+    <input type="reset" id="resetform" value="Reset"> </p>
+    </form
+        
+</body> 
+</html>

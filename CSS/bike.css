@@ -1,0 +1,230 @@
+/*
+*****************************************************************************
+Title: Css Page-Houk's Bicycles
+Use: Styling for company page.
+Author: Stacy Houk
+School/Term: Southern Illinois University, Spring 2021
+Developed: Feb 6, 2021
+Revised: March 20, 2021
+Tested: Feb 24, 2021; Passed on Firefox, Opera, and Chrome browsers.
+******************************************************************************
+*/
+
+/* Set Page Margin */
+
+html { 
+    margin: 10px;
+    background-color: aquamarine; /* Add background graphic */
+}
+/* hide the mobile menu */
+#mobile_menu { display: none; }
+
+/* display the mobile menu */
+#mobile_menu { display: block; }
+
+body {
+    color: #1c024b;
+}
+/* Add padding to h1 */
+
+h1 {
+    padding :10 px
+}
+/* Add Padding to h2 */
+h2{ 
+    padding: 10px:
+
+}
+/* Add padding to left and right side of paragraph */
+
+p {
+    padding-left: 5px;
+    padding-right: 5px;
+    align-content: center;
+    color: #600571;
+    padding-top: 10px;
+    
+}
+/* Set the width of the body */
+body {
+    width: 75%;
+    max-width: 960px;
+    color: dimgrey;
+    font-family: Arial, Helvetica, sans-serif;
+}
+/* For screens that are 992px or less */
+@media screen and (max-width: 992px) {
+    body{
+        background-color: blanchedalmond;
+    }
+}
+/* For screens that are 600px or less */
+@media screen and (max-width: 600px) {
+    body{
+        background-color: beige;
+    }
+}
+/* This will be beside the body to create the 2 column layout*/ 
+aside {
+    height: 350px;
+    width: 36.5%; */ 360 / 960 x 100 */ 
+    border-left: 2px solid #ef9c00;
+    float: right;
+}
+/* The Flexible Box navigation layout */ 
+ul  {
+    display: flex;\
+    align-items: center;
+    list-style-type: none;
+    background: silver;
+    height: 90px;
+}
+/* Add padding to all list items */
+li {
+    background: #999;
+    width: 130px;
+    margin: 0 15px 0 0;
+    padding-left: 10px;
+    text-align: auto;
+    font-weight: bold;
+}
+a {
+    text-decoration:none;
+    color: #000;
+}
+#home { align-self: flex-start; }
+
+/* This is the main image posititiong */
+div. image {
+    position: absolute;
+    padding-left: 25px;
+}
+/* Add blue-border, rounded corners to first image */
+#bmi {
+    background-image: url("../images/bike.jpg");
+    border: 10px solid #3335FF; 
+    border-radius: 25px;
+    width: 50%;
+    height: 400px;   
+}
+#bmi:hover {
+    background-image: url("../images/ImageIndexBike.jpg")
+}
+/* This is for the border and caption to the image */
+figure {
+  border: 1px #cccccc solid;
+  padding-top: 0;
+}
+figcaption {
+font-style: italic;
+  text-align: left;
+}
+
+table{
+    border: 1px solid black;
+    border-collapse: collapse; }
+th, td {
+    border: 1px solid black;
+    padding: .2em .7em;
+    text-align: right; }
+th.left, td.left { text-align: left; }
+thead, tfoot { background-color: aqua; }
+tfoot { font-weight: bold; }
+}
+/* table for service page */
+@media only screen and (max-width: 479px) {
+    th, td {
+        display: block;
+}
+thead {
+    display: none;
+}
+tr td:first-child {
+    font-weight: bold;
+    font-size: 110%;
+    background-color: aqua
+}
+
+tbody td {
+    border-bottom-style: none;
+}
+tfoot {
+    background-color: white;
+    border: none;
+    border-top: 1px solid black;
+}
+tfoot th, tfoot td:nth-of-type(1) {
+    display: none; 
+}
+}
+
+/* Style the footer */
+{
+  box-sizing: border-box;
+}
+
+/* Style the header */
+header {
+  width: 96.875%;
+  padding: 15px 1.5625%;
+  text-align: center;
+  font-size: 1.25em;
+  color: #1c024b;
+}
+
+/* Create two columns/boxes that floats next to each other */
+column {
+  float: left;
+  width: 250px;
+  background-color: #d948c3;
+  padding: 20px;
+  color: #0ed9c1;
+}
+
+/* Style the list inside the menu */
+column ul {
+  list-style-type: none;
+  padding: 0;
+  column-gap: normal;
+}
+
+article {
+  float: right;
+  padding: 20px
+  width: 500px;
+  color: darkblue;
+  text-align: left;
+}
+
+/* Clear floats after the columns */
+section::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the footer */
+footer {
+    width:96.875%;
+    background-color:;
+    padding: 15px 1.5625%;
+    text-align: center;
+    color: #d948c3;
+}
+/*Navigation Menu */
+#nav_menu ul { 
+    list-style-type: none;
+    padding: 1em 0;
+    text-align: center;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+#nav_menu ul li {
+    display: inline;
+    padding: 0 1.5em;
+}
+#nav_menu ul li a {
+    font-weight: bold;
+    color: blue;
+}
+#nav_menu ul li a.current { text-decoration: none; }

@@ -1,0 +1,143 @@
+<!--
+*****************************************************************************
+Title: Services Page-Houk's Bicycles
+Use: Services Page
+Author: Stacy Houk
+School/Term: Southern Illinois University, Spring 2021
+Developed: Feb 6, 2021
+Revised: Mar 20, 2021
+Tested: Feb 24, 2021; Passed on Firefox, Opera, and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+    <!--Navigation Menu-->
+<nav id="nav_menu">
+    <ul>
+        <li><a href="index.htm" >Home</a></li>
+        <li><a href="rental.htm" >Get Rentals</a></li>
+        <li><a href="sales.htm" >Sales</a></li>
+        <li><a href="services.htm" class="current">Services</a></li>
+        <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+    
+    </ul>
+</nav>
+<head><!--Head section begin-->
+    <meta charset="utf-8"> 
+    <meta name="description" content="Welcome to Houk's Bicycles-Services Page">
+    <meta name="keywords" content="Services Page">
+    
+    <link rel="stylesheet" href="CSS/bike.css">
+    <link rel="stylesheet" href="SlickNav-master/scss/slicknav.css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+    <link rel="icon" type="image/gif" href="images/animated_favicon1.gif">
+    <script src="https://code.jquery.com/jquery-3.2.1.min,js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo: ="#mobile_menu"});
+        });
+    </script>
+    
+    
+</head><!--Head section end-->
+<body>
+    <header>
+        <h1>Services Page</h1>
+    </header>
+    
+<table>
+    <thead>
+        <tr>
+            <th>Maintenance</th>
+            <th>Desc. of Service</th>
+            <th>Cost of Service</th>
+            <th>Est. turn-around</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Safety Checks</td>
+            <td>We will check your bike from top to bottom</td>
+            <td>$5.00</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Brake Adj</td>
+            <td>Check brakes for problems</td>
+            <td>$5.00</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Clean up and Lube</td>
+            <td>We will clean and lubricate as needed</td>
+            <td>$5.00</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Seat and Handlebar Adj</td>
+            <td>Adju seats/handlebars as needed</td>
+            <td>no fee</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Calibrate Gears</td>
+            <td>Will check the calibration for your gears</td>
+            <td>free</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Adjust Wheel Hubs</td>
+            <td>Will adjust the hubs on your wheels</td>
+            <td>$1.00</td>
+            <td>1 day</td>
+        </tr>
+
+    </tbody>
+    </table>
+ <!--Starts repair table-->   
+    <br>
+    <br>
+    <table>
+    <thead>
+        <tr>
+            <th>Repairs</th>
+            <th>Desc. of Service</th>
+            <th>Cost of Service</th>
+            <th>Est. turn-around</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>Tire Repair</td>
+            <td>We will check your tires</td>
+            <td>$1.00</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Cable Replacement</td>
+            <td>Replacing the cables</td>
+            <td>$5.00</td>
+            <td>2 day</td>
+        </tr>
+        <tr>
+            <td>Parts Replacement</td>
+            <td>Replace any parts as needed</td>
+            <td>TBD based on parts as needed</td>
+            <td>TBD</td>
+        </tr>
+        <tr>
+            <td>Repair Bike Chain</td>
+            <td>Repair chain</td>
+            <td>$5.00</td>
+            <td>1 day</td>
+        </tr>
+        <tr>
+            <td>Other Misc Repairs</td>
+            <td>Will work on other repairs as needed</td>
+            <td>TBD on the repairs that are needed</td>
+            <td>TBD</td>
+        </tr>
+    </tbody>
+    </table>
+</body> 
+</html>

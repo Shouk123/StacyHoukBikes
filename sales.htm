@@ -1,0 +1,53 @@
+<!--
+*****************************************************************************
+Title: Sales Page-Houk's Bicycles
+Use: Sales Page
+Author: Stacy Houk
+School/Term: Southern Illinois University, Spring 2021
+Developed: Feb 6, 2021
+Revised: March 14, 2021
+Tested: Feb 24, 2021; Passed on Firefox, Opera, and Chrome browsers.
+******************************************************************************
+-->
+<html lang="en-US">
+     <!--Navigation Menu-->
+<nav id="nav_menu"> 
+    <ul>
+        <li><a href="index.htm" >Home</a></li>
+        <li><a href="rental.htm" >Get Rentals</a></li>
+        <li><a href="sales.htm" class="current">Sales</a></li>
+        <li><a href="services.htm">Services</a></li>
+        <li><a href="contact.htm" class="lastitem">Contact Us</a></li>
+    
+    </ul>
+</nav>
+ 
+<head><!--Head section begin-->
+    <meta charset="utf-8"> 
+    <meta name="description" content="Welcome to Houk's Bicycles-Sales Page">
+    <meta name="keywords" content="Sales Page">
+    
+    <link rel="stylesheet" href="CSS/bike.css">
+    <link rel="stylesheet" href="SlickNav-master/scss/slicknav.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.min,js"></script>
+    <script src="js/jquery.slicknav.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+            $('#nav_menu').slicknav({prependTo: ="#mobile_menu"});
+        });
+    </script>
+</head><!--Head section end-->
+<body>
+    <header>
+        <h1>Sales Page</h1>
+    </header>
+    <!--Sunset video for sales page-->
+    <video id="videoplayer" width="480" height="270" controls autoplay>
+    <source src="images/TimeLapse.mp4">
+    </video>
+    
+    
+    
+        
+</body>
+</html>

@@ -108,7 +108,7 @@ div. image {
     height: 400px;   
 }
 #bmi:hover {
-    background-image: url("../images/ImageIndexBike.jpg")
+    background-image: url("../images/ImageIndexBike.jpg");
 }
 /* This is for the border and caption to the image */
 figure {

@@ -101,7 +101,7 @@ div. image {
 }
 /* Add blue-border, rounded corners to first image */
 #bmi {
-    background-image: url("../images/bike.jpg");
+    background-image: url("../images/Bike.jpg");
     border: 10px solid #3335FF; 
     border-radius: 25px;
     width: 50%;
